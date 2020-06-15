@@ -14,6 +14,6 @@ bindsym $mod+Shift+space exec --no-startup-id rofi -modi rofi-i3-bindsym:~/git/r
 if your i3 config is not in `~/.i3/config` you'll need to change this line:
 ```python
 filename =  os.path.expanduser('~') + '/.i3/config' #? Change this if you have your config file located somewhere else.
+```
 
 If you like to see bindsyms without a decription remove line 29.
-```
