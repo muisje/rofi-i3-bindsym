@@ -4,7 +4,7 @@ import os
 
 if (len(sys.argv) == 2):
     line = str(sys.argv[1])
-    command = line[line.rfind('|')+2:]
+    command = line[line.rfind('|')+3:]
     if command.startswith('exec'):
         command = 'sleep 0.05 && ' + command + ' &' #? Sleep so we can launch another instance of rofi and other applications seem to work too like xkill and blurlock.
     else:
