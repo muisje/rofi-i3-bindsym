@@ -26,7 +26,7 @@ else:
                     bindsym = line[8:command_pos]
                     if description == '' or description.startswith('bindsym '):
                         #? Remove continue if you want to show bindsyms without a description
-                        # continue
+                        continue
                         print (bindsym + ' | ' + command)
                     else:
                         print(description + ' | ' + bindsym + ' | ' + command)
